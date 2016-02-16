@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ ! -d Frameworks  ]
+then
+  echo "Creating './Frameworks' folder"
+  mkdir ./Frameworks
+fi
+
+if [ ! -d Frameworks/AWS ]
+then
+  echo "Downloading AWS SDK ..."
+  mkdir ./Frameworks/AWS
+  curl http://sdk-for-ios.amazonwebservices.com/latest/aws-ios-sdk.zip --progress-bar -o ./Frameworks/AWS/aws-sdk-ios.zip 
+  echo ""
+  echo "Unzipping SDK ..."
+  unzip Frameworks/AWS/aws-sdk-ios.zip -d ./Frameworks/AWS
+fi
+
+echo "Enter your AWS identity pool:"
+read -s identity_pool
+echo "Enter your AWS S3 bucket:"
+read bucket
+echo "
+AWS_S3_BUCKET=$bucket
+AWS_IDENTITY_POOL=$aws_identity_pool" > S3Uploader/Debug.xcconfig

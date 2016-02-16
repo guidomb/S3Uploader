@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D73D61E1C72AACE0097596C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D73D61D1C72AACE0097596C /* AppDelegate.swift */; };
+		9D73D6201C72AACE0097596C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D73D61F1C72AACE0097596C /* ViewController.swift */; };
+		9D73D6231C72AACE0097596C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D73D6211C72AACE0097596C /* Main.storyboard */; };
+		9D73D6251C72AACE0097596C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D73D6241C72AACE0097596C /* Assets.xcassets */; };
+		9D73D6281C72AACE0097596C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D73D6261C72AACE0097596C /* LaunchScreen.storyboard */; };
+		9D73D6331C72AACE0097596C /* S3UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D73D6321C72AACE0097596C /* S3UploaderTests.swift */; };
+		9D73D63F1C72B0C40097596C /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D63D1C72B0C40097596C /* AWSCore.framework */; };
+		9D73D6401C72B0C40097596C /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D63E1C72B0C40097596C /* AWSS3.framework */; };
+		9D73D6421C72B0D60097596C /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D6411C72B0D60097596C /* AWSCognito.framework */; };
+		9D73D6441C72B1030097596C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D6431C72B1030097596C /* libsqlite3.tbd */; };
+		9D73D6461C72B10B0097596C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D6451C72B10B0097596C /* libz.tbd */; };
+		9D73D6481C72B1150097596C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D6471C72B1150097596C /* CFNetwork.framework */; };
+		9D73D64A1C72B11F0097596C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D6491C72B11F0097596C /* Security.framework */; };
+		9D73D64C1C72B1280097596C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D64B1C72B1280097596C /* SystemConfiguration.framework */; };
+		9D73D64E1C72B1310097596C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D73D64D1C72B1310097596C /* UIKit.framework */; };
+		9D73D6531C72C1A80097596C /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9D73D6521C72C1A80097596C /* Debug.xcconfig */; };
+		9D73D6571C72C51A0097596C /* archive.zip in Resources */ = {isa = PBXBuildFile; fileRef = 9D73D6561C72C51A0097596C /* archive.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D73D62F1C72AACE0097596C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D73D6121C72AACE0097596C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D73D6191C72AACE0097596C;
+			remoteInfo = S3Uploader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D73D61A1C72AACE0097596C /* S3Uploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3Uploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D73D61D1C72AACE0097596C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D73D61F1C72AACE0097596C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D73D6221C72AACE0097596C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D73D6241C72AACE0097596C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D73D6271C72AACE0097596C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D73D6291C72AACE0097596C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D73D62E1C72AACE0097596C /* S3UploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S3UploaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D73D6321C72AACE0097596C /* S3UploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3UploaderTests.swift; sourceTree = "<group>"; };
+		9D73D6341C72AACE0097596C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D73D63D1C72B0C40097596C /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Frameworks/AWS/frameworks/AWSCore.framework; sourceTree = "<group>"; };
+		9D73D63E1C72B0C40097596C /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Frameworks/AWS/frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		9D73D6411C72B0D60097596C /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Frameworks/AWS/frameworks/extras/AWSCognito.framework; sourceTree = "<group>"; };
+		9D73D6431C72B1030097596C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D73D6451C72B10B0097596C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9D73D6471C72B1150097596C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9D73D6491C72B11F0097596C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9D73D64B1C72B1280097596C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9D73D64D1C72B1310097596C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D73D64F1C72B1540097596C /* S3Uploader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "S3Uploader-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D73D6521C72C1A80097596C /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9D73D6561C72C51A0097596C /* archive.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = archive.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D73D6171C72AACE0097596C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D73D64E1C72B1310097596C /* UIKit.framework in Frameworks */,
+				9D73D64C1C72B1280097596C /* SystemConfiguration.framework in Frameworks */,
+				9D73D64A1C72B11F0097596C /* Security.framework in Frameworks */,
+				9D73D6481C72B1150097596C /* CFNetwork.framework in Frameworks */,
+				9D73D6461C72B10B0097596C /* libz.tbd in Frameworks */,
+				9D73D6441C72B1030097596C /* libsqlite3.tbd in Frameworks */,
+				9D73D6421C72B0D60097596C /* AWSCognito.framework in Frameworks */,
+				9D73D63F1C72B0C40097596C /* AWSCore.framework in Frameworks */,
+				9D73D6401C72B0C40097596C /* AWSS3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D73D62B1C72AACE0097596C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D73D6111C72AACE0097596C = {
+			isa = PBXGroup;
+			children = (
+				9D73D6561C72C51A0097596C /* archive.zip */,
+				9D73D64D1C72B1310097596C /* UIKit.framework */,
+				9D73D64B1C72B1280097596C /* SystemConfiguration.framework */,
+				9D73D6491C72B11F0097596C /* Security.framework */,
+				9D73D6471C72B1150097596C /* CFNetwork.framework */,
+				9D73D6451C72B10B0097596C /* libz.tbd */,
+				9D73D6431C72B1030097596C /* libsqlite3.tbd */,
+				9D73D6411C72B0D60097596C /* AWSCognito.framework */,
+				9D73D63D1C72B0C40097596C /* AWSCore.framework */,
+				9D73D63E1C72B0C40097596C /* AWSS3.framework */,
+				9D73D61C1C72AACE0097596C /* S3Uploader */,
+				9D73D6311C72AACE0097596C /* S3UploaderTests */,
+				9D73D61B1C72AACE0097596C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D73D61B1C72AACE0097596C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D73D61A1C72AACE0097596C /* S3Uploader.app */,
+				9D73D62E1C72AACE0097596C /* S3UploaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D73D61C1C72AACE0097596C /* S3Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				9D73D6521C72C1A80097596C /* Debug.xcconfig */,
+				9D73D61D1C72AACE0097596C /* AppDelegate.swift */,
+				9D73D61F1C72AACE0097596C /* ViewController.swift */,
+				9D73D6211C72AACE0097596C /* Main.storyboard */,
+				9D73D6241C72AACE0097596C /* Assets.xcassets */,
+				9D73D6261C72AACE0097596C /* LaunchScreen.storyboard */,
+				9D73D6291C72AACE0097596C /* Info.plist */,
+				9D73D64F1C72B1540097596C /* S3Uploader-Bridging-Header.h */,
+			);
+			path = S3Uploader;
+			sourceTree = "<group>";
+		};
+		9D73D6311C72AACE0097596C /* S3UploaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D73D6321C72AACE0097596C /* S3UploaderTests.swift */,
+				9D73D6341C72AACE0097596C /* Info.plist */,
+			);
+			path = S3UploaderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D73D6191C72AACE0097596C /* S3Uploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D73D6371C72AACE0097596C /* Build configuration list for PBXNativeTarget "S3Uploader" */;
+			buildPhases = (
+				9D73D6161C72AACE0097596C /* Sources */,
+				9D73D6171C72AACE0097596C /* Frameworks */,
+				9D73D6181C72AACE0097596C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = S3Uploader;
+			productName = S3Uploader;
+			productReference = 9D73D61A1C72AACE0097596C /* S3Uploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D73D62D1C72AACE0097596C /* S3UploaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D73D63A1C72AACE0097596C /* Build configuration list for PBXNativeTarget "S3UploaderTests" */;
+			buildPhases = (
+				9D73D62A1C72AACE0097596C /* Sources */,
+				9D73D62B1C72AACE0097596C /* Frameworks */,
+				9D73D62C1C72AACE0097596C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D73D6301C72AACE0097596C /* PBXTargetDependency */,
+			);
+			name = S3UploaderTests;
+			productName = S3UploaderTests;
+			productReference = 9D73D62E1C72AACE0097596C /* S3UploaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D73D6121C72AACE0097596C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = guidomb;
+				TargetAttributes = {
+					9D73D6191C72AACE0097596C = {
+						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					9D73D62D1C72AACE0097596C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9D73D6191C72AACE0097596C;
+					};
+				};
+			};
+			buildConfigurationList = 9D73D6151C72AACE0097596C /* Build configuration list for PBXProject "S3Uploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D73D6111C72AACE0097596C;
+			productRefGroup = 9D73D61B1C72AACE0097596C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D73D6191C72AACE0097596C /* S3Uploader */,
+				9D73D62D1C72AACE0097596C /* S3UploaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D73D6181C72AACE0097596C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D73D6531C72C1A80097596C /* Debug.xcconfig in Resources */,
+				9D73D6281C72AACE0097596C /* LaunchScreen.storyboard in Resources */,
+				9D73D6251C72AACE0097596C /* Assets.xcassets in Resources */,
+				9D73D6231C72AACE0097596C /* Main.storyboard in Resources */,
+				9D73D6571C72C51A0097596C /* archive.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D73D62C1C72AACE0097596C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D73D6161C72AACE0097596C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D73D6201C72AACE0097596C /* ViewController.swift in Sources */,
+				9D73D61E1C72AACE0097596C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D73D62A1C72AACE0097596C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D73D6331C72AACE0097596C /* S3UploaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D73D6301C72AACE0097596C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D73D6191C72AACE0097596C /* S3Uploader */;
+			targetProxy = 9D73D62F1C72AACE0097596C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D73D6211C72AACE0097596C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D73D6221C72AACE0097596C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D73D6261C72AACE0097596C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D73D6271C72AACE0097596C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D73D6351C72AACE0097596C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D73D6361C72AACE0097596C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D73D6381C72AACE0097596C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D73D6521C72C1A80097596C /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/AWS/frameworks",
+					"$(PROJECT_DIR)/Frameworks/AWS/frameworks/extras",
+				);
+				INFOPLIST_FILE = S3Uploader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guidomb.S3Uploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "S3Uploader/S3Uploader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D73D6391C72AACE0097596C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/AWS/frameworks",
+					"$(PROJECT_DIR)/Frameworks/AWS/frameworks/extras",
+				);
+				INFOPLIST_FILE = S3Uploader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guidomb.S3Uploader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "S3Uploader/S3Uploader-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9D73D63B1C72AACE0097596C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = S3UploaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guidomb.S3UploaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/S3Uploader.app/S3Uploader";
+			};
+			name = Debug;
+		};
+		9D73D63C1C72AACE0097596C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = S3UploaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.guidomb.S3UploaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/S3Uploader.app/S3Uploader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D73D6151C72AACE0097596C /* Build configuration list for PBXProject "S3Uploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D73D6351C72AACE0097596C /* Debug */,
+				9D73D6361C72AACE0097596C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D73D6371C72AACE0097596C /* Build configuration list for PBXNativeTarget "S3Uploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D73D6381C72AACE0097596C /* Debug */,
+				9D73D6391C72AACE0097596C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D73D63A1C72AACE0097596C /* Build configuration list for PBXNativeTarget "S3UploaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D73D63B1C72AACE0097596C /* Debug */,
+				9D73D63C1C72AACE0097596C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D73D6121C72AACE0097596C /* Project object */;
+}
